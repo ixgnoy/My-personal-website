@@ -3,10 +3,11 @@ body {
     margin: 0;
     text-align: center;
     font-family: "Merriweather", serif;
+    position: relative;
 }
 body{
     display: block;
-    margin:8px;
+    margin:0px;
 }
 .top-container {
     background-color: #e4f9f5;
@@ -88,6 +89,35 @@ p {
     border-radius: 50%;
     width: 200px;
     height: 350px;
+}
+.avatar{
+    width:300px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    top: 1200px;
+    left:50%;
+    transform:translate(-50%, -50%) ;
+    clip-path: inset(-100vw 0 0 0 round 50%);
+    border: 6px solid rgb(234, 234, 234);
+}
+.avatar img{
+    position: absolute;
+    top: 35%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    height: auto;
+    transition: transform .2s ease;
+}
+.avatar:hover img{
+    transform: translate(-50%, -50%) scale(1.6);
+}
+.self-intro{
+    margin-top: 600px;
+    position: relative;
 }
 .parent {
     display: grid;
